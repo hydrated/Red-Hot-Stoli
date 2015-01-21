@@ -1,0 +1,73 @@
+//
+//  TouchController.swift
+//  Red-Hot-Stoli
+//
+//  Created by Hydra on 2015/1/18.
+//  Copyright (c) 2015年 Hydra. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class TouchController : UIViewController {
+    @IBOutlet weak var outletButtonHeart: UIImageView!
+    var isTouched :Bool = false
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        registerTagRecognizer()
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        isTouched = false
+        doHeartBeatAnimationWithRate(1.2)
+    }
+    
+    func registerTagRecognizer() {
+        var tagRecog :UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "onHeartTag")
+        outletButtonHeart.userInteractionEnabled = true
+        outletButtonHeart.addGestureRecognizer(tagRecog)
+    }
+    
+    func onHeartTag() {
+        if !isTouched {
+            NSLog("on tag")
+            isTouched = true
+            
+            doHeartBeatAnimationWithRate(0.35)
+            var time = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "toNextController", userInfo: nil, repeats: false)
+        }
+    }
+    
+    func doHeartBeatAnimationWithRate(rate :NSTimeInterval) {
+        outletButtonHeart.stopAnimating()
+        var imgArrays :NSMutableArray = []
+        var image1 :UIImage! = UIImage(named: "跳動心_大.png")
+        var image2 :UIImage! = UIImage(named: "跳動心_小.png")
+        imgArrays.addObject(image1)
+        imgArrays.addObject(image2)
+        
+        outletButtonHeart.animationImages = imgArrays
+        outletButtonHeart.animationDuration = rate;
+        outletButtonHeart.animationRepeatCount = 0;
+        outletButtonHeart.startAnimating()
+    }
+    
+    func toNextController() {
+        let vc :UIViewController! = self.storyboard?.instantiateViewControllerWithIdentifier("HeartRateController") as UIViewController
+        vc.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    //    override func viewDidAppear(animated: Bool) {
+    //        super.viewDidAppear(animated)
+    //        openWinStoryBoard()
+    //    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+}

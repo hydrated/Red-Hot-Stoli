@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80191FB41A6B86F800D5FE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80191FB31A6B86F800D5FE1B /* AppDelegate.swift */; };
+		80191FB61A6B86F800D5FE1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80191FB51A6B86F800D5FE1B /* ViewController.swift */; };
+		80191FB91A6B86F800D5FE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80191FB71A6B86F800D5FE1B /* Main.storyboard */; };
+		80191FBB1A6B86F800D5FE1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80191FBA1A6B86F800D5FE1B /* Images.xcassets */; };
+		80191FBE1A6B86F800D5FE1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80191FBC1A6B86F800D5FE1B /* LaunchScreen.xib */; };
+		80191FCA1A6B86F800D5FE1B /* Red_Hot_StoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80191FC91A6B86F800D5FE1B /* Red_Hot_StoliTests.swift */; };
+		80191FE01A6B876200D5FE1B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80191FD41A6B876200D5FE1B /* logo.png */; };
+		80191FE11A6B876200D5FE1B /* 參考用-結束畫面.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80191FD51A6B876200D5FE1B /* 參考用-結束畫面.jpg */; };
+		80191FE21A6B876200D5FE1B /* 參考用-跳動畫面1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80191FD61A6B876200D5FE1B /* 參考用-跳動畫面1.jpg */; };
+		80191FE31A6B876200D5FE1B /* 參考用-跳動畫面2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80191FD71A6B876200D5FE1B /* 參考用-跳動畫面2.jpg */; };
+		80191FE41A6B876200D5FE1B /* 參考用-開始畫面.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80191FD81A6B876200D5FE1B /* 參考用-開始畫面.jpg */; };
+		80191FE51A6B876200D5FE1B /* 回到開始畫面紐(位置在左上方).png in Resources */ = {isa = PBXBuildFile; fileRef = 80191FD91A6B876200D5FE1B /* 回到開始畫面紐(位置在左上方).png */; };
+		80191FE61A6B876200D5FE1B /* 底圖.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80191FDA1A6B876200D5FE1B /* 底圖.jpg */; };
+		80191FE71A6B876200D5FE1B /* 結束愛心底.png in Resources */ = {isa = PBXBuildFile; fileRef = 80191FDB1A6B876200D5FE1B /* 結束愛心底.png */; };
+		80191FE81A6B876200D5FE1B /* 跳動心_大.png in Resources */ = {isa = PBXBuildFile; fileRef = 80191FDC1A6B876200D5FE1B /* 跳動心_大.png */; };
+		80191FEA1A6B876200D5FE1B /* 開始愛心底.png in Resources */ = {isa = PBXBuildFile; fileRef = 80191FDE1A6B876200D5FE1B /* 開始愛心底.png */; };
+		80191FEB1A6B876200D5FE1B /* 開始紅心按鈕.png in Resources */ = {isa = PBXBuildFile; fileRef = 80191FDF1A6B876200D5FE1B /* 開始紅心按鈕.png */; };
+		80191FED1A6B889300D5FE1B /* TouchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80191FEC1A6B889300D5FE1B /* TouchController.swift */; };
+		80191FEF1A6B88AB00D5FE1B /* HeartRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80191FEE1A6B88AB00D5FE1B /* HeartRateController.swift */; };
+		80191FFB1A6BB97400D5FE1B /* 跳動心_小.png in Resources */ = {isa = PBXBuildFile; fileRef = 80191FFA1A6BB97400D5FE1B /* 跳動心_小.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80191FC41A6B86F800D5FE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80191FA61A6B86F800D5FE1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80191FAD1A6B86F800D5FE1B;
+			remoteInfo = "Red-Hot-Stoli";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80191FAE1A6B86F800D5FE1B /* Red-Hot-Stoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Red-Hot-Stoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80191FB21A6B86F800D5FE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80191FB31A6B86F800D5FE1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80191FB51A6B86F800D5FE1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80191FB81A6B86F800D5FE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80191FBA1A6B86F800D5FE1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80191FBD1A6B86F800D5FE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		80191FC31A6B86F800D5FE1B /* Red-Hot-StoliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Red-Hot-StoliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80191FC81A6B86F800D5FE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80191FC91A6B86F800D5FE1B /* Red_Hot_StoliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Red_Hot_StoliTests.swift; sourceTree = "<group>"; };
+		80191FD41A6B876200D5FE1B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		80191FD51A6B876200D5FE1B /* 參考用-結束畫面.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "參考用-結束畫面.jpg"; sourceTree = "<group>"; };
+		80191FD61A6B876200D5FE1B /* 參考用-跳動畫面1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "參考用-跳動畫面1.jpg"; sourceTree = "<group>"; };
+		80191FD71A6B876200D5FE1B /* 參考用-跳動畫面2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "參考用-跳動畫面2.jpg"; sourceTree = "<group>"; };
+		80191FD81A6B876200D5FE1B /* 參考用-開始畫面.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "參考用-開始畫面.jpg"; sourceTree = "<group>"; };
+		80191FD91A6B876200D5FE1B /* 回到開始畫面紐(位置在左上方).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "回到開始畫面紐(位置在左上方).png"; sourceTree = "<group>"; };
+		80191FDA1A6B876200D5FE1B /* 底圖.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "底圖.jpg"; sourceTree = "<group>"; };
+		80191FDB1A6B876200D5FE1B /* 結束愛心底.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "結束愛心底.png"; sourceTree = "<group>"; };
+		80191FDC1A6B876200D5FE1B /* 跳動心_大.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "跳動心_大.png"; sourceTree = "<group>"; };
+		80191FDE1A6B876200D5FE1B /* 開始愛心底.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "開始愛心底.png"; sourceTree = "<group>"; };
+		80191FDF1A6B876200D5FE1B /* 開始紅心按鈕.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "開始紅心按鈕.png"; sourceTree = "<group>"; };
+		80191FEC1A6B889300D5FE1B /* TouchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchController.swift; sourceTree = "<group>"; };
+		80191FEE1A6B88AB00D5FE1B /* HeartRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateController.swift; sourceTree = "<group>"; };
+		80191FFA1A6BB97400D5FE1B /* 跳動心_小.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "跳動心_小.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80191FAB1A6B86F800D5FE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80191FC01A6B86F800D5FE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80191FA51A6B86F800D5FE1B = {
+			isa = PBXGroup;
+			children = (
+				80191FB01A6B86F800D5FE1B /* Red-Hot-Stoli */,
+				80191FC61A6B86F800D5FE1B /* Red-Hot-StoliTests */,
+				80191FAF1A6B86F800D5FE1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80191FAF1A6B86F800D5FE1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80191FAE1A6B86F800D5FE1B /* Red-Hot-Stoli.app */,
+				80191FC31A6B86F800D5FE1B /* Red-Hot-StoliTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80191FB01A6B86F800D5FE1B /* Red-Hot-Stoli */ = {
+			isa = PBXGroup;
+			children = (
+				80191FEE1A6B88AB00D5FE1B /* HeartRateController.swift */,
+				80191FEC1A6B889300D5FE1B /* TouchController.swift */,
+				80191FB31A6B86F800D5FE1B /* AppDelegate.swift */,
+				80191FB51A6B86F800D5FE1B /* ViewController.swift */,
+				80191FB71A6B86F800D5FE1B /* Main.storyboard */,
+				80191FBA1A6B86F800D5FE1B /* Images.xcassets */,
+				80191FBC1A6B86F800D5FE1B /* LaunchScreen.xib */,
+				80191FD31A6B876200D5FE1B /* 程式需求圖檔-英勝國際 */,
+				80191FB11A6B86F800D5FE1B /* Supporting Files */,
+			);
+			path = "Red-Hot-Stoli";
+			sourceTree = "<group>";
+		};
+		80191FB11A6B86F800D5FE1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80191FB21A6B86F800D5FE1B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80191FC61A6B86F800D5FE1B /* Red-Hot-StoliTests */ = {
+			isa = PBXGroup;
+			children = (
+				80191FC91A6B86F800D5FE1B /* Red_Hot_StoliTests.swift */,
+				80191FC71A6B86F800D5FE1B /* Supporting Files */,
+			);
+			path = "Red-Hot-StoliTests";
+			sourceTree = "<group>";
+		};
+		80191FC71A6B86F800D5FE1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80191FC81A6B86F800D5FE1B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80191FD31A6B876200D5FE1B /* 程式需求圖檔-英勝國際 */ = {
+			isa = PBXGroup;
+			children = (
+				80191FD41A6B876200D5FE1B /* logo.png */,
+				80191FD51A6B876200D5FE1B /* 參考用-結束畫面.jpg */,
+				80191FD61A6B876200D5FE1B /* 參考用-跳動畫面1.jpg */,
+				80191FD71A6B876200D5FE1B /* 參考用-跳動畫面2.jpg */,
+				80191FD81A6B876200D5FE1B /* 參考用-開始畫面.jpg */,
+				80191FD91A6B876200D5FE1B /* 回到開始畫面紐(位置在左上方).png */,
+				80191FDA1A6B876200D5FE1B /* 底圖.jpg */,
+				80191FDB1A6B876200D5FE1B /* 結束愛心底.png */,
+				80191FDC1A6B876200D5FE1B /* 跳動心_大.png */,
+				80191FFA1A6BB97400D5FE1B /* 跳動心_小.png */,
+				80191FDE1A6B876200D5FE1B /* 開始愛心底.png */,
+				80191FDF1A6B876200D5FE1B /* 開始紅心按鈕.png */,
+			);
+			path = "程式需求圖檔-英勝國際";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80191FAD1A6B86F800D5FE1B /* Red-Hot-Stoli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80191FCD1A6B86F800D5FE1B /* Build configuration list for PBXNativeTarget "Red-Hot-Stoli" */;
+			buildPhases = (
+				80191FAA1A6B86F800D5FE1B /* Sources */,
+				80191FAB1A6B86F800D5FE1B /* Frameworks */,
+				80191FAC1A6B86F800D5FE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Red-Hot-Stoli";
+			productName = "Red-Hot-Stoli";
+			productReference = 80191FAE1A6B86F800D5FE1B /* Red-Hot-Stoli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80191FC21A6B86F800D5FE1B /* Red-Hot-StoliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80191FD01A6B86F800D5FE1B /* Build configuration list for PBXNativeTarget "Red-Hot-StoliTests" */;
+			buildPhases = (
+				80191FBF1A6B86F800D5FE1B /* Sources */,
+				80191FC01A6B86F800D5FE1B /* Frameworks */,
+				80191FC11A6B86F800D5FE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80191FC51A6B86F800D5FE1B /* PBXTargetDependency */,
+			);
+			name = "Red-Hot-StoliTests";
+			productName = "Red-Hot-StoliTests";
+			productReference = 80191FC31A6B86F800D5FE1B /* Red-Hot-StoliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80191FA61A6B86F800D5FE1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Hydra;
+				TargetAttributes = {
+					80191FAD1A6B86F800D5FE1B = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = AHKW5D9D23;
+					};
+					80191FC21A6B86F800D5FE1B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 80191FAD1A6B86F800D5FE1B;
+					};
+				};
+			};
+			buildConfigurationList = 80191FA91A6B86F800D5FE1B /* Build configuration list for PBXProject "Red-Hot-Stoli" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80191FA51A6B86F800D5FE1B;
+			productRefGroup = 80191FAF1A6B86F800D5FE1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80191FAD1A6B86F800D5FE1B /* Red-Hot-Stoli */,
+				80191FC21A6B86F800D5FE1B /* Red-Hot-StoliTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80191FAC1A6B86F800D5FE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80191FE71A6B876200D5FE1B /* 結束愛心底.png in Resources */,
+				80191FEB1A6B876200D5FE1B /* 開始紅心按鈕.png in Resources */,
+				80191FE61A6B876200D5FE1B /* 底圖.jpg in Resources */,
+				80191FE01A6B876200D5FE1B /* logo.png in Resources */,
+				80191FE41A6B876200D5FE1B /* 參考用-開始畫面.jpg in Resources */,
+				80191FE31A6B876200D5FE1B /* 參考用-跳動畫面2.jpg in Resources */,
+				80191FE81A6B876200D5FE1B /* 跳動心_大.png in Resources */,
+				80191FE21A6B876200D5FE1B /* 參考用-跳動畫面1.jpg in Resources */,
+				80191FB91A6B86F800D5FE1B /* Main.storyboard in Resources */,
+				80191FBE1A6B86F800D5FE1B /* LaunchScreen.xib in Resources */,
+				80191FBB1A6B86F800D5FE1B /* Images.xcassets in Resources */,
+				80191FFB1A6BB97400D5FE1B /* 跳動心_小.png in Resources */,
+				80191FE11A6B876200D5FE1B /* 參考用-結束畫面.jpg in Resources */,
+				80191FE51A6B876200D5FE1B /* 回到開始畫面紐(位置在左上方).png in Resources */,
+				80191FEA1A6B876200D5FE1B /* 開始愛心底.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80191FC11A6B86F800D5FE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80191FAA1A6B86F800D5FE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80191FEF1A6B88AB00D5FE1B /* HeartRateController.swift in Sources */,
+				80191FB61A6B86F800D5FE1B /* ViewController.swift in Sources */,
+				80191FB41A6B86F800D5FE1B /* AppDelegate.swift in Sources */,
+				80191FED1A6B889300D5FE1B /* TouchController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80191FBF1A6B86F800D5FE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80191FCA1A6B86F800D5FE1B /* Red_Hot_StoliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80191FC51A6B86F800D5FE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80191FAD1A6B86F800D5FE1B /* Red-Hot-Stoli */;
+			targetProxy = 80191FC41A6B86F800D5FE1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80191FB71A6B86F800D5FE1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80191FB81A6B86F800D5FE1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80191FBC1A6B86F800D5FE1B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80191FBD1A6B86F800D5FE1B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80191FCB1A6B86F800D5FE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		80191FCC1A6B86F800D5FE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80191FCE1A6B86F800D5FE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Red-Hot-Stoli/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80191FCF1A6B86F800D5FE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Red-Hot-Stoli/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		80191FD11A6B86F800D5FE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Red-Hot-StoliTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Red-Hot-Stoli.app/Red-Hot-Stoli";
+			};
+			name = Debug;
+		};
+		80191FD21A6B86F800D5FE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Red-Hot-StoliTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Red-Hot-Stoli.app/Red-Hot-Stoli";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80191FA91A6B86F800D5FE1B /* Build configuration list for PBXProject "Red-Hot-Stoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80191FCB1A6B86F800D5FE1B /* Debug */,
+				80191FCC1A6B86F800D5FE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80191FCD1A6B86F800D5FE1B /* Build configuration list for PBXNativeTarget "Red-Hot-Stoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80191FCE1A6B86F800D5FE1B /* Debug */,
+				80191FCF1A6B86F800D5FE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80191FD01A6B86F800D5FE1B /* Build configuration list for PBXNativeTarget "Red-Hot-StoliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80191FD11A6B86F800D5FE1B /* Debug */,
+				80191FD21A6B86F800D5FE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80191FA61A6B86F800D5FE1B /* Project object */;
+}

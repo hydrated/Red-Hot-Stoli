@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Touch Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TouchController" customModule="Red_Hot_Stoli" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="底圖.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bpv-OY-NgD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="開始愛心底.png" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-bk-Ja2">
+                                <rect key="frame" x="50" y="55" width="500" height="570"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="570" id="K2a-iu-U7Q"/>
+                                    <constraint firstAttribute="width" constant="500" id="MOF-gp-xht"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-zp-bSd">
+                                <rect key="frame" x="80" y="90" width="440" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="a41-YD-fFn"/>
+                                    <constraint firstAttribute="width" constant="440" id="eJo-03-tqj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="開始紅心按鈕.png" translatesAutoresizingMaskIntoConstraints="NO" id="cEf-MB-dSx">
+                                <rect key="frame" x="155" y="226" width="290" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="Neo-h8-XHX"/>
+                                    <constraint firstAttribute="height" constant="280" id="eW5-u3-Gee"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bpv-OY-NgD" secondAttribute="trailing" constant="-16" id="6BF-SW-ixp"/>
+                            <constraint firstItem="bpv-OY-NgD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="KDC-I0-8dk"/>
+                            <constraint firstItem="4bg-zp-bSd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="PKV-8f-Enm"/>
+                            <constraint firstAttribute="centerX" secondItem="cEf-MB-dSx" secondAttribute="centerX" id="PQT-0K-3tb"/>
+                            <constraint firstItem="cEf-MB-dSx" firstAttribute="centerX" secondItem="YP3-bk-Ja2" secondAttribute="centerX" id="Sy0-ZL-M5h"/>
+                            <constraint firstItem="cEf-MB-dSx" firstAttribute="centerY" secondItem="YP3-bk-Ja2" secondAttribute="centerY" constant="26" id="X3j-xF-dMg"/>
+                            <constraint firstAttribute="centerY" secondItem="YP3-bk-Ja2" secondAttribute="centerY" constant="-40" id="XUQ-D0-cLQ"/>
+                            <constraint firstItem="bpv-OY-NgD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="apN-DM-3Oa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bpv-OY-NgD" secondAttribute="bottom" id="erH-1r-q2s"/>
+                            <constraint firstAttribute="centerY" secondItem="cEf-MB-dSx" secondAttribute="centerY" id="nqS-Yd-yYL"/>
+                            <constraint firstAttribute="centerX" secondItem="YP3-bk-Ja2" secondAttribute="centerX" id="sqg-A8-Wb1"/>
+                            <constraint firstItem="4bg-zp-bSd" firstAttribute="centerX" secondItem="bpv-OY-NgD" secondAttribute="centerX" id="zV8-SG-d9e"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PQT-0K-3tb"/>
+                                <exclude reference="nqS-Yd-yYL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="outletButtonHeart" destination="cEf-MB-dSx" id="anu-Qp-OLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-71"/>
+        </scene>
+        <!--Heart Rate Controller-->
+        <scene sceneID="tVZ-gG-AD1">
+            <objects>
+                <viewController storyboardIdentifier="HeartRateController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GDf-aP-tPB" customClass="HeartRateController" customModule="Red_Hot_Stoli" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lJu-wm-Jr3"/>
+                        <viewControllerLayoutGuide type="bottom" id="BgE-CA-qF1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PGK-TQ-qef">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="底圖.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bcS-F2-0el">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="0rP-hd-Y9w">
+                                <rect key="frame" x="80" y="90" width="440" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Xd9-Ux-01i"/>
+                                    <constraint firstAttribute="width" constant="440" id="ZDm-Du-54m"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="440" id="fHA-NZ-jQG"/>
+                                    <constraint firstAttribute="height" constant="200" id="fMc-tk-HEk"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="結束愛心底.png" translatesAutoresizingMaskIntoConstraints="NO" id="HWv-ng-gW4">
+                                <rect key="frame" x="50" y="55" width="500" height="570"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="OEe-Iq-Vtq"/>
+                                    <constraint firstAttribute="height" constant="570" id="hkl-w3-fUz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="跳動心_小.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gus-yc-M76">
+                                <rect key="frame" x="145" y="218" width="310" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="M8g-BT-zLL"/>
+                                    <constraint firstAttribute="height" constant="300" id="koF-8c-3Dd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HeartBeatRate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaN-UN-YIm">
+                                <rect key="frame" x="200" y="290" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bzn-nr-bWM"/>
+                                    <constraint firstAttribute="height" constant="100" id="e15-io-CAq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DD-Or-FBG">
+                                <rect key="frame" x="16" y="28" width="84" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="MhA-ee-scT"/>
+                                    <constraint firstAttribute="width" constant="84" id="aVY-36-FvS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="回到開始畫面紐(位置在左上方).png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonBack:" destination="GDf-aP-tPB" eventType="touchUpInside" id="sPP-dz-Hcz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HWv-ng-gW4" secondAttribute="centerX" id="1I1-lk-1ci"/>
+                            <constraint firstAttribute="centerY" secondItem="Gus-yc-M76" secondAttribute="centerY" constant="-68" id="1cK-44-v4E"/>
+                            <constraint firstAttribute="centerX" secondItem="0rP-hd-Y9w" secondAttribute="centerX" id="9zA-bM-S86"/>
+                            <constraint firstItem="bcS-F2-0el" firstAttribute="leading" secondItem="PGK-TQ-qef" secondAttribute="leadingMargin" constant="-16" id="ELu-Hm-pvC"/>
+                            <constraint firstItem="6DD-Or-FBG" firstAttribute="leading" secondItem="PGK-TQ-qef" secondAttribute="leadingMargin" id="LsS-M8-m3G"/>
+                            <constraint firstAttribute="centerY" secondItem="GaN-UN-YIm" secondAttribute="centerY" constant="-40" id="Odz-R6-lbh"/>
+                            <constraint firstItem="BgE-CA-qF1" firstAttribute="top" secondItem="bcS-F2-0el" secondAttribute="bottom" id="UTK-FO-cXF"/>
+                            <constraint firstItem="0rP-hd-Y9w" firstAttribute="top" secondItem="lJu-wm-Jr3" secondAttribute="bottom" constant="70" id="Xra-Uk-ejh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bcS-F2-0el" secondAttribute="trailing" constant="-16" id="Yki-5D-45u"/>
+                            <constraint firstAttribute="centerX" secondItem="Gus-yc-M76" secondAttribute="centerX" id="fbK-bd-XoX"/>
+                            <constraint firstAttribute="centerX" secondItem="GaN-UN-YIm" secondAttribute="centerX" id="gLV-tv-biN"/>
+                            <constraint firstAttribute="centerY" secondItem="HWv-ng-gW4" secondAttribute="centerY" constant="-40" id="gs1-d5-RIh"/>
+                            <constraint firstItem="bcS-F2-0el" firstAttribute="top" secondItem="PGK-TQ-qef" secondAttribute="topMargin" id="sfP-fj-OJY"/>
+                            <constraint firstItem="6DD-Or-FBG" firstAttribute="top" secondItem="lJu-wm-Jr3" secondAttribute="bottom" constant="8" id="vwy-nH-E24"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outletImageHeartBeat" destination="Gus-yc-M76" id="MdB-oB-5p3"/>
+                        <outlet property="outletLabelHeartRate" destination="GaN-UN-YIm" id="EST-4b-nOd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqL-Yu-cve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="-71"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="1521" height="777"/>
+        <image name="回到開始畫面紐(位置在左上方).png" width="233" height="177"/>
+        <image name="底圖.jpg" width="2480" height="3507"/>
+        <image name="結束愛心底.png" width="1675" height="1775"/>
+        <image name="跳動心_小.png" width="1013" height="890"/>
+        <image name="開始愛心底.png" width="1667" height="1779"/>
+        <image name="開始紅心按鈕.png" width="1013" height="889"/>
+    </resources>
+</document>
