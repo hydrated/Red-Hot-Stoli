@@ -11,6 +11,7 @@ import UIKit
 
 class TouchController : UIViewController {
     @IBOutlet weak var outletButtonHeart: UIImageView!
+    @IBOutlet weak var outletHeartBackground: UIImageView!
     var isTouched :Bool = false
     
     
@@ -39,7 +40,7 @@ class TouchController : UIViewController {
             isTouched = true
             
             doHeartBeatAnimationWithRate(0.35)
-            var time = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "toNextController", userInfo: nil, repeats: false)
+            var time = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "toNextController", userInfo: nil, repeats: false)
         }
     }
     
@@ -55,7 +56,22 @@ class TouchController : UIViewController {
         outletButtonHeart.animationDuration = rate;
         outletButtonHeart.animationRepeatCount = 0;
         outletButtonHeart.startAnimating()
+        
+        
+        outletHeartBackground.stopAnimating()
+        var imgArraysBackground :NSMutableArray = []
+        var imageBack1 :UIImage! = UIImage(named: "開始愛心底.png")
+        var imageBack2 :UIImage! = UIImage(named: "開始愛心底大.png")
+        
+        imgArraysBackground.addObject(imageBack1)
+        imgArraysBackground.addObject(imageBack2)
+        
+        outletHeartBackground.animationImages = imgArraysBackground
+        outletHeartBackground.animationDuration = rate;
+        outletHeartBackground.animationRepeatCount = 0;
+        outletHeartBackground.startAnimating()
     }
+    
     
     func toNextController() {
         let vc :UIViewController! = self.storyboard?.instantiateViewControllerWithIdentifier("HeartRateController") as UIViewController

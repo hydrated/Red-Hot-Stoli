@@ -27,6 +27,8 @@
 		80191FED1A6B889300D5FE1B /* TouchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80191FEC1A6B889300D5FE1B /* TouchController.swift */; };
 		80191FEF1A6B88AB00D5FE1B /* HeartRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80191FEE1A6B88AB00D5FE1B /* HeartRateController.swift */; };
 		80191FFB1A6BB97400D5FE1B /* 跳動心_小.png in Resources */ = {isa = PBXBuildFile; fileRef = 80191FFA1A6BB97400D5FE1B /* 跳動心_小.png */; };
+		80C1D6941A720FFE00D6910F /* 開始愛心底大.png in Resources */ = {isa = PBXBuildFile; fileRef = 80C1D6931A720FFE00D6910F /* 開始愛心底大.png */; };
+		80C1D6961A7210C300D6910F /* 跳動音效.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80C1D6951A7210C300D6910F /* 跳動音效.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		80191FEC1A6B889300D5FE1B /* TouchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchController.swift; sourceTree = "<group>"; };
 		80191FEE1A6B88AB00D5FE1B /* HeartRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateController.swift; sourceTree = "<group>"; };
 		80191FFA1A6BB97400D5FE1B /* 跳動心_小.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "跳動心_小.png"; sourceTree = "<group>"; };
+		80C1D6931A720FFE00D6910F /* 開始愛心底大.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "開始愛心底大.png"; sourceTree = "<group>"; };
+		80C1D6951A7210C300D6910F /* 跳動音效.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "跳動音效.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 		80191FD31A6B876200D5FE1B /* 程式需求圖檔-英勝國際 */ = {
 			isa = PBXGroup;
 			children = (
+				80C1D6951A7210C300D6910F /* 跳動音效.mp3 */,
+				80C1D6931A720FFE00D6910F /* 開始愛心底大.png */,
 				80191FD41A6B876200D5FE1B /* logo.png */,
 				80191FD51A6B876200D5FE1B /* 參考用-結束畫面.jpg */,
 				80191FD61A6B876200D5FE1B /* 參考用-跳動畫面1.jpg */,
@@ -252,10 +258,12 @@
 				80191FE81A6B876200D5FE1B /* 跳動心_大.png in Resources */,
 				80191FE21A6B876200D5FE1B /* 參考用-跳動畫面1.jpg in Resources */,
 				80191FB91A6B86F800D5FE1B /* Main.storyboard in Resources */,
+				80C1D6961A7210C300D6910F /* 跳動音效.mp3 in Resources */,
 				80191FBE1A6B86F800D5FE1B /* LaunchScreen.xib in Resources */,
 				80191FBB1A6B86F800D5FE1B /* Images.xcassets in Resources */,
 				80191FFB1A6BB97400D5FE1B /* 跳動心_小.png in Resources */,
 				80191FE11A6B876200D5FE1B /* 參考用-結束畫面.jpg in Resources */,
+				80C1D6941A720FFE00D6910F /* 開始愛心底大.png in Resources */,
 				80191FE51A6B876200D5FE1B /* 回到開始畫面紐(位置在左上方).png in Resources */,
 				80191FEA1A6B876200D5FE1B /* 開始愛心底.png in Resources */,
 			);

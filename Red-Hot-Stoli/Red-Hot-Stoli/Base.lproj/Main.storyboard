@@ -66,6 +66,7 @@
                     </view>
                     <connections>
                         <outlet property="outletButtonHeart" destination="cEf-MB-dSx" id="anu-Qp-OLA"/>
+                        <outlet property="outletHeartBackground" destination="YP3-bk-Ja2" id="CdJ-UI-yuv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
