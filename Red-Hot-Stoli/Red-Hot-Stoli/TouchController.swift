@@ -8,12 +8,15 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class TouchController : UIViewController {
     @IBOutlet weak var outletButtonHeart: UIImageView!
     @IBOutlet weak var outletHeartBackground: UIImageView!
-    var isTouched :Bool = false
     
+    
+    var isTouched :Bool = false
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,19 @@ class TouchController : UIViewController {
         doHeartBeatAnimationWithRate(1.2)
     }
     
+    func playHeartBeatAudio() {
+        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("跳動音效", ofType: "mp3")!)
+        
+        // Removed deprecated use of AVAudioSessionDelegate protocol
+        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        
+        var error:NSError?
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+    }
+    
     func registerTagRecognizer() {
         var tagRecog :UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "onHeartTag")
         outletButtonHeart.userInteractionEnabled = true
@@ -39,6 +55,7 @@ class TouchController : UIViewController {
             NSLog("on tag")
             isTouched = true
             
+            playHeartBeatAudio()
             doHeartBeatAnimationWithRate(0.35)
             var time = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "toNextController", userInfo: nil, repeats: false)
         }
@@ -77,6 +94,7 @@ class TouchController : UIViewController {
         let vc :UIViewController! = self.storyboard?.instantiateViewControllerWithIdentifier("HeartRateController") as UIViewController
         vc.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         self.presentViewController(vc, animated: true, completion: nil)
+        audioPlayer.stop()
     }
     //    override func viewDidAppear(animated: Bool) {
     //        super.viewDidAppear(animated)

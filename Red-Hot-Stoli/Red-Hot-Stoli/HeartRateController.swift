@@ -8,13 +8,14 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class HeartRateController : UIViewController {
     @IBOutlet weak var outletLabelHeartRate: UILabel!
     @IBOutlet weak var outletImageHeartBeat: UIImageView!
     var myTimer :NSTimer?
     var myFloatAlpha :CGFloat = 0.3
-    
+    var audioPlayer: AVAudioPlayer = AVAudioPlayer()
 
     @IBAction func actionButtonBack(sender: AnyObject) {
         if let tmpTimer = myTimer {
@@ -22,6 +23,7 @@ class HeartRateController : UIViewController {
         }
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +32,21 @@ class HeartRateController : UIViewController {
         var stopTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("stopTimer"), userInfo: nil, repeats: false)
         
         self.view.bringSubviewToFront(outletLabelHeartRate)
+        playHeartBeatAudio()
         
+    }
+    
+    func playHeartBeatAudio() {
+        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("跳動音效", ofType: "mp3")!)
+        
+        // Removed deprecated use of AVAudioSessionDelegate protocol
+        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        
+        var error:NSError?
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
     }
     
     
@@ -44,7 +60,7 @@ class HeartRateController : UIViewController {
         if let timer = myTimer {
             timer.invalidate()
             doHeartBeatAnimationWithRate(1.0)
-
+            audioPlayer.stop()
         }
     }
     
