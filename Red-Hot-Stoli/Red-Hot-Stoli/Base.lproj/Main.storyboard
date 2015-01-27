@@ -105,9 +105,9 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="跳動心_小.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gus-yc-M76">
-                                <rect key="frame" x="145" y="218" width="310" height="300"/>
+                                <rect key="frame" x="140" y="218" width="320" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="310" id="M8g-BT-zLL"/>
+                                    <constraint firstAttribute="width" constant="320" id="M8g-BT-zLL"/>
                                     <constraint firstAttribute="height" constant="300" id="koF-8c-3Dd"/>
                                 </constraints>
                             </imageView>
@@ -167,9 +167,9 @@
         <image name="logo.png" width="1521" height="777"/>
         <image name="回到開始畫面紐(位置在左上方).png" width="233" height="177"/>
         <image name="底圖.jpg" width="2480" height="3507"/>
-        <image name="結束愛心底.png" width="1675" height="1775"/>
-        <image name="跳動心_小.png" width="1013" height="890"/>
-        <image name="開始愛心底.png" width="1667" height="1779"/>
+        <image name="結束愛心底.png" width="1838" height="1961"/>
+        <image name="跳動心_小.png" width="1011" height="888"/>
+        <image name="開始愛心底.png" width="1838" height="1961"/>
         <image name="開始紅心按鈕.png" width="1013" height="889"/>
     </resources>
 </document>
