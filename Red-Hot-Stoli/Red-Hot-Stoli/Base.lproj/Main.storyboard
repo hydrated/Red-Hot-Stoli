@@ -168,7 +168,7 @@
         <image name="回到開始畫面紐(位置在左上方).png" width="233" height="177"/>
         <image name="底圖.jpg" width="2480" height="3507"/>
         <image name="結束愛心底.png" width="1838" height="1961"/>
-        <image name="跳動心_小.png" width="1011" height="888"/>
+        <image name="跳動心_小.png" width="1013" height="890"/>
         <image name="開始愛心底.png" width="1838" height="1961"/>
         <image name="開始紅心按鈕.png" width="1013" height="889"/>
     </resources>

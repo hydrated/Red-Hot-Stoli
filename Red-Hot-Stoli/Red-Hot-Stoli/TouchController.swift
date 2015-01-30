@@ -14,9 +14,8 @@ class TouchController : UIViewController {
     @IBOutlet weak var outletButtonHeart: UIImageView!
     @IBOutlet weak var outletHeartBackground: UIImageView!
     
-    
-    var isTouched :Bool = false
     var audioPlayer = AVAudioPlayer()
+    var timer: NSTimer? 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +26,6 @@ class TouchController : UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        isTouched = false
         doHeartBeatAnimationWithRate(1.2)
     }
     
@@ -45,20 +43,64 @@ class TouchController : UIViewController {
     }
     
     func registerTagRecognizer() {
-        var tagRecog :UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "onHeartTag")
+        var tagRecog :UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "onHeartTag:")
+        tagRecog.minimumPressDuration = 0.1
+
         outletButtonHeart.userInteractionEnabled = true
         outletButtonHeart.addGestureRecognizer(tagRecog)
     }
     
-    func onHeartTag() {
-        if !isTouched {
-            NSLog("on tag")
-            isTouched = true
+    func onHeartTag(gesture :UIGestureRecognizer) {
+        let location :CGPoint = gesture.locationInView(gesture.view)
+        
+        switch(gesture.state) {
+        case UIGestureRecognizerState.Ended:
+            doHeartBeatAnimationWithRate(1.2)
+            audioPlayer.stop()
+
+            stopTimer()
             
+            NSLog("======UIGestureRecognizerStateEnd")
+            
+        case UIGestureRecognizerState.Began:
             playHeartBeatAudio()
             doHeartBeatAnimationWithRate(0.35)
-            var time = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "toNextController", userInfo: nil, repeats: false)
+            timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "toNextController", userInfo: nil, repeats: false)
+            NSLog("======UIGestureRecognizerStateBegan")
+            break;
+            
+        case UIGestureRecognizerState.Changed:
+            NSLog("======UIGestureRecognizerStateChanged");
+            if (CGRectContainsPoint(outletButtonHeart.bounds, location)) {
+                NSLog("in view")
+            }else{
+                doHeartBeatAnimationWithRate(1.2)
+                audioPlayer.stop()
+                
+                stopTimer()
+                NSLog("out of view")
+            }
+            break;
+            
+        case UIGestureRecognizerState.Cancelled:
+            NSLog("======UIGestureRecognizerStateCancelled");
+            break;
+            
+        case UIGestureRecognizerState.Failed:
+            NSLog("======UIGestureRecognizerStateFailed");
+            break;
+            
+        case UIGestureRecognizerState.Possible:
+            NSLog("======UIGestureRecognizerStatePossible");
+            break
+        default:
+            break
+            
         }
+
+
+        
+
     }
     
     func doHeartBeatAnimationWithRate(rate :NSTimeInterval) {
@@ -87,6 +129,12 @@ class TouchController : UIViewController {
         outletHeartBackground.animationDuration = rate;
         outletHeartBackground.animationRepeatCount = 0;
         outletHeartBackground.startAnimating()
+    }
+    
+    func stopTimer() {
+        if let myTimer = timer {
+            myTimer.invalidate()
+        }
     }
     
     
